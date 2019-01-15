@@ -17,7 +17,7 @@ class _SettingPagePageState extends State<SettingPagePage> {
       initialValue: '',
       obscureText: true,
       decoration: InputDecoration(
-          hintText: '设置远程路由器地址',
+          hintText: '设置远程服务器地址',
           contentPadding: EdgeInsets.fromLTRB(10.0, 2.0, 10.0, 10.0),
           border: UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.black26)),
