@@ -9,7 +9,6 @@
 .buildlog/
 .history
 .svn/
-*/key.properties
 */my-release-key.keystore
 
 # IntelliJ related
@@ -31,6 +30,7 @@
 build/
 
 # Android related
+**/android/key.properties
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
 **/android/captures/
