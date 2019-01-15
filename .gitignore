@@ -9,6 +9,8 @@
 .buildlog/
 .history
 .svn/
+*/key.properties
+*/my-release-key.keystore
 
 # IntelliJ related
 *.iml
