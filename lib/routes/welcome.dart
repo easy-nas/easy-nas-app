@@ -6,6 +6,7 @@ import 'dart:ui' as ui;
 
 class WelcomePage extends StatefulWidget {
   static String tag = 'welcome-page';
+
   _WelcomePageState createState() => _WelcomePageState();
 }
 
@@ -13,7 +14,7 @@ class _WelcomePageState extends State<WelcomePage>
     with SingleTickerProviderStateMixin {
 
   //Flutter中的Animation对象是一个在一段时间内依次生成一个区间之间值的类。Animation对象的输出可以是线性的、曲线的、一个步进函数或者任何其他可以设计的映射。 根据Animation对象的控制方式，动画可以反向运行，甚至可以在中间切换方向。
-  Animation<double>  animation;
+  Animation<double> animation;
 
   // AnimationController是一个特殊的Animation对象，在屏幕刷新的每一帧，就会生成一个新的值。默认情况下，AnimationController在给定的时间段内会线性的生成从0.0到1.0的数字
   AnimationController animationController;
@@ -36,7 +37,6 @@ class _WelcomePageState extends State<WelcomePage>
 
   @override
   Widget build(BuildContext context) {
-
     // 登录
     final login = new FlatButton(
       child: new Text(

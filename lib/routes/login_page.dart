@@ -1,35 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:easy_nas_app/routes/home_page.dart';
+import 'package:easy_nas_app/routes/setting_page.dart';
+
 // 登录
 class LoginPage extends StatefulWidget {
-
   static String tag = "login-page";
 
   @override
   _LoginPageState createState() => new _LoginPageState();
-
 }
 
 class _LoginPageState extends State<LoginPage> {
-
-
   @override
   Widget build(BuildContext context) {
-
     final _userName = TextFormField(
       keyboardType: TextInputType.text,
       autofocus: false,
       initialValue: '',
       decoration: InputDecoration(
-        hintText: 'username',
-        contentPadding: EdgeInsets.fromLTRB(10.0, 2.0, 10.0, 10.0),
-        border: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black26)
-        ),
-        focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.black)
-        )
-      ),
+          hintText: 'username',
+          contentPadding: EdgeInsets.fromLTRB(10.0, 2.0, 10.0, 10.0),
+          border: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.black26)),
+          focusedBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.black))),
     );
 
     final _password = TextFormField(
@@ -52,7 +46,13 @@ class _LoginPageState extends State<LoginPage> {
           borderRadius: BorderRadius.circular(18),
         ),
         onPressed: () {
-          Navigator.of(context).pushNamed(HomePage.tag);
+          // ajax 登录后　是否设置了远程路由器
+          var status = false;
+          if (status) {
+            Navigator.of(context).pushNamed(HomePage.tag);
+          } else {
+            Navigator.of(context).pushNamed(SettingPagePage.tag);
+          }
         },
         padding: EdgeInsets.all(12),
         color: Colors.grey,
@@ -101,6 +101,5 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
-
   }
 }

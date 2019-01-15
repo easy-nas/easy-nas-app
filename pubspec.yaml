@@ -41,7 +41,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/home.jpg
-
+    - images/home/ic_main_tab_company_nor.png
+    - images/home/ic_main_tab_company_pre.png
+    - images/home/ic_main_tab_contacts_nor.png
+    - images/home/ic_main_tab_contacts_pre.png
+    - images/home/ic_main_tab_find_nor.png
+    - images/home/ic_main_tab_find_pre.png
+    - images/home/ic_main_tab_my_nor.png
+    - images/home/ic_main_tab_my_pre.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
